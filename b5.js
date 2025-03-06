@@ -1,4 +1,6 @@
 let arr =[];
+sum1=0;
+sum2=0;
 for (let i = 0; i < 5; i++) {
     arr[i] = Math.floor(Math.random()*100);
     if(arr[i]%2==0){
