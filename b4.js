@@ -1,10 +1,11 @@
-
-let arr = prompt("Nhập vào 1 dãy số bất kỳ");
-let arr1 = arr.split(",");  
-let max = arr1[0];
-for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] > max) {
-        max = arr1[i];
+let arr = prompt("Nhập vào dãy số bất kỳ");
+arr = arr.split("");
+let max = arr[0];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+        max = arr[i];
     }
+
+
 }
-console.log(max);
+console.log("Phần tử lớn nhất trong mảng là: " + max);
