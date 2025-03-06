@@ -1,15 +1,15 @@
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let num = prompt("Nhập vào 1 số bất kỳ");
-function checkNumber(arr, num) {
-    let count = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] == num) {
-            count++; 
-        } 
-
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let n = prompt("Nhập vào số nguyên bất kì");
+let count = 0;
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == n) {
+        count++; 
     }
-    return count;
-
 }
-console.log(checkNumber(arr, num));
+if (count == 0) {
+    alert("Không có số nguyên này trong mảng"); 
+}
+else {
+    alert("Số nguyên " + n + " xuất hiện " + count + " lần trong mảng"); 
+}
 
